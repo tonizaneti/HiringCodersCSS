@@ -8,12 +8,24 @@
     /*grid-template-rows: 50px 50px 50px 50px;*/
     /*grid-template-rows: repeat(4, 100px);*/
     /*grid-template-rows: 50px 75px repeat(2, 100px);*/
-    /*grid-template-rows: auto;
-    grid-template-rows: 1fr 2fr 1fr 3fr ;*/
-    /*grid-template-columns: 90px 120px 150px 180px;*/
-    grid-template-columns: 90px 1fr 2fr repeat() ;
-}
+    /*grid-template-rows: auto;*/
+    grid-template-rows: 1fr 2fr 1fr 3fr ;
+    /*grid-template-columns: 90px 120px 150px 180px;
+    grid-template-columns: 90px 1fr 2fr repeat(3, 1fr) ; */
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    row-gap: 30px;
 
+}
+.kai{
+    grid-row: 2;
+    grid-column: 3;
+}
+.preto{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
 .grid div{
     padding: 30px;
 }
