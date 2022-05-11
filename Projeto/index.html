@@ -11,7 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="estiloflex.css">
+    <link rel="stylesheet" href="estiloflex.css">
+    <link rel="stylesheet" href="estilogrid.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/afbe3615ef.js" crossorigin="anonymous"></script>
     <link href="fontawesome/css/all.css" rel="stylesheet">
@@ -43,10 +44,10 @@
                 <h1>Toni Zaneti</h1>
                 <h5>Full Stack Developer</h5>
             </div>
-            <div id="arrow">
-                <i class="fa-solid fa-circle-arrow-down"></i>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-circle-arrow-down"></i>
             </div>
-            <div id="about">
+            <div style="display: none;" id="about">
                 <p>
                     Em nível acadêmico, formado em 2009 pela UTFPR.</p>
                 <p>Em 2016 concluimos pela UNOPAR, a pós graduação em Tecnologias Para Aplicações Web.</p>
@@ -60,34 +61,87 @@
             </div>
             <div class="flex">
                 <div>
-                    <img src="https://www.corneliodigital.com/imagens/concursos/09-05-2022_processo-seletivo-2-foto-enio-medeiros.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit dolorem exercitationem explicabo illo recusandae placeat ratione molestias ipsa saepe velit necessitatibus minima praesentium esse dicta, perspiciatis incidunt, alias dolore?</p>
+                    <img src="https://www.corneliodigital.com/imagens/eventos/01-05-2022_Dia_do_Trabalhador_Caominhada_capa.jpg"
+                        alt="Caominhada">
+                    <p>No dia 1º de Maio, foi realizado na cidade de Cornélio Procópio, a 1ª Cãominhada, organizada com
+                        apoio do Pet Shop Amigos de Patas, na qual centenas de tutores com seus amigos de Patas
+                        estiveram presentes.</p>
                 </div>
                 <div>
-                    <img src="https://www.corneliodigital.com/imagens/concursos/09-05-2022_processo-seletivo-2-foto-enio-medeiros.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit dolorem exercitationem explicabo illo recusandae placeat ratione molestias ipsa saepe velit necessitatibus minima praesentium esse dicta, perspiciatis incidunt, alias dolore?</p>
+                    <img src="https://www.corneliodigital.com/imagens/eventos/17-04-2022_Carreata_Solidaria_Pascoa_Gaiola_Clube.jpg"
+                        alt="React Native">
+                    <p>Em Comemoração ao Dia de Páscoa e num gesto de confraternização e Solidariedade, o Gaiola Clube,
+                        clube de Gaiolas, da cidade de Cornélio Procópio, realizou no último dia 17 de abril, a Primeira
+                        Carreata Solidária de Páscoa.</p>
+                    <p>A carreata se extendeu pelas ruas da cidade, e distribuiu doces, e chocolates para a criançada,
+                        deixando-as muito felizes.</p>
                 </div>
                 <div>
-                    <img src="https://www.corneliodigital.com/imagens/eventos/01-05-2022_Dia_do_Trabalhador_Eventos_na_Praca_capa.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit dolorem exercitationem explicabo illo recusandae placeat ratione molestias ipsa saepe velit necessitatibus minima praesentium esse dicta, perspiciatis incidunt, alias dolore?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit dolorem exercitationem explicabo illo recusandae placeat ratione molestias ipsa saepe velit necessitatibus minima praesentium esse dicta, perspiciatis incidunt, alias dolore?</p>
+                    <img src="https://www.corneliodigital.com/imagens/eventos/01-05-2022_Dia_do_Trabalhador_Eventos_na_Praca_capa.jpg"
+                        alt="">
+                    <p>Com organização pela Prefeitura de Cornélio Procópio e SESC, SENAC, SEBRAE, e com o apoio de
+                        várias entidades, foi realizado no dia 1º de Maio, uma grande festa em comemoração ao dia do
+                        trabalhador. O evento teve início logo de manhãzinha, com passeio de bike, e cãominhada, se
+                        extendendo no período da tarde, com a apresentação de grupos de danças, atividades empresariais,
+                        de alunos, inclusive realizando o corte de cabelos, eventos esportivos, instituições de ensino,
+                        e encerrando com um grande show de Jean e Júlio.</p>
                 </div>
                 <div>
                     <img src="https://www.corneliodigital.com/imagens/eventos/24-04-2022_PSTCxFoz.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit dolorem exercitationem explicabo illo recusandae placeat ratione molestias ipsa saepe velit necessitatibus minima praesentium esse dicta, perspiciatis incidunt, alias dolore?</p>
+                    <p>PSTC: Com o apoio de sua torcida, o PSTC obteve êxito em conquistar a vitória num jogo bastante
+                        movimentado, a partida terminou com o placar de 2x1 contra a equipe de Foz do Iguaçu, sendo esta
+                        realizada no dia 24 de abril, no Estádio Municipal Ubirajara Medeiros.</p>
                 </div>
+            </div>
+            <div class="grid">
+                <div class="preto" style="background-color: #000;">
+                    <p class="textogridprincipal">TECNOLOGIAS & SUAS RESPECTIVAS LINGUAGENS</p>
+                </div>
+                <div style="background-color: #fff430;">
+                    <p class="textogridsecundario"><img src="https://proxy.organicadigital.com/img-6019dda37f88924a.png"
+                            alt="React Native" class="imggrdsecundario">
+                        React Native é uma biblioteca Javascript que foi criada e é atualmente mantida pelo Facebook. Utilizada para o desenvolvimento de aplicativos para dispositivos móveis, Android e IOS, de forma nativa.</p>
+                    <p class="textogridsecundario">Seus princípios de funcionamento são idênticos ao do ReactJS, com a diferença apenas que não manipula o DOM através do Virtual DOM, mas sim executando num processo em segundo plano (interpretando o Javascript escrito pelos desenvolvedores) diretamente no dispositivo final, e se comunicando com a plataforma nativa por meio de uma serialização, uma ponte assíncrona e em lote.</p>
+                    <p class="textogridsecundario">
+                        O React Native não usa HTML, em seu lugar, trabalha com Javascript puro e tendo com sintaxe JSX.
+                    </p>
+                </div>
+                <div style="background-color: #9d59d2;"><img
+                        src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2019/01/o-que-%C3%A9-mysql.png"
+                        class="imggrdsecundario">
+                    <p class="texogridsecundario"></p>O MySQL é um sistema de gerenciamento de banco de dados (SGBD), o qual utiliza a linguagem SQL (Linguagem de Consulta Estruturada, Structured Query Language), como interface. Sendo atualmente um dos SGBD´s (Sistemas Gerenciadores de Banco de Dados) mais populares da Oracle Corporation, com mais de 10 milhões de instalações pelo mundo.</p>
+                    <p>Podemos destacar entre seus usuários: Nasa, Friendster, Banco Bradesco, Dataprev, HP, Nokia, Sony, Lufthansa, U.S. Army, U.S. Federal Reserve Bank, Associated Press, Alcatel, Slashdot, Cisco Systems, Google, entre outros.</p>
+                </div>
+                <div style="background-color: #e9e9e9;">
+                    <img
+                            src="https://portalwebdesigner.com/wp-content/uploads/2016/08/programacao-php-codigo-logo-300x168.jpg"
+                            class="imggrdsecundario"></p>
+                            <p class="textogridsecundario">PHP é a sigla para "PHP Hypertext Preprocessor", ou como em seu início Personal Home Page, é uma linguagem interpretada livre, sendo desenvolvida inicialmente apenas para o desenvolvimento de aplicações presentes do lado do servidor, capazes de gerar conteúdo dinâmico na WWW. Está entre as primeiras linguagens passíveis de inserção em documentos HTML, dispensando em muitos casos o uso de arquivos externos para eventuais processamentos de dados. O código é interpretado no lado do servidor pelo módulo PHP, que também gera a página web a ser visualizada no lado do cliente. A linguagem evoluiu, passou a oferecer funcionalidades em linha de comando, e além disso, ganhou características adicionais, que possibilitaram usos adicionais do PHP, não relacionados a web sites. É possível instalar o PHP na maioria dos sistemas operacionais, gratuitamente. Concorrente direto da tecnologia ASP pertencente à Microsoft, o PHP é utilizado em aplicações como o MediaWiki, Facebook, Drupal, Joomla!, WordPress, Magento e o Oscommerce.
+                            </p>
+                </div>
+                <div class="toni" style="background-color: #fff430;">Toni</div>
+                <div style="background-color: #000;"></div>
+                <!--<div class="toni" style="background-color: #fff430;">Toni</div>-->
             </div>
             <div class="form">
                 <div>
-                    <p>Deixe seu contato</p>
+                    <p>Deixe seu contato!</p>
                 </div>
                 <form action="">
                     <input type="text" placeholder="Seu melhor E-mail :)">
-                    <button>Enviar</button>
+                    <button>enviar</button>
                 </form>
             </div>
         </section>
     </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
 
 </body>
 

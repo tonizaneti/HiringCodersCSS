@@ -30,12 +30,32 @@ header{
     justify-content:space-between;
     align-items: center;
     padding: 10px;
+    /*border-bottom: 2px solid #FFF;*/
+    /*box-shadow: 1px 1px 10px 1px rgb(255, 255, 255);
+    border-bottom: 15px ridge rgb(245, 146, 17) ;*/
+
 }
 header ul{
     display: flex;
 }
 header ul li{
     padding: 5px;
+    /*border-right : 2px dashed #fff;*/
+}
+
+header ul li a{
+    transition: 300ms;
+}
+
+header ul li a:hover{
+    color:red;
+    text-decoration: underline;
+    /*border-right : 2px dashed #fff;*/
+}
+header ul li:first-child{
+    /*border-bottom: 2px dashed #fff;*/
+    padding: 5px;
+    /*border-left: 2px dashed #fff;*/
 }
 
 .container{
@@ -48,6 +68,34 @@ header ul li{
 .container .name h5{
     font-size: 25px;
 }
+
+#arrow{
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to{
+        visibility: hidden;
+
+    }
+    
+}
+
+#animation{
+    transition: 300ms;
+
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+.active{
+    display: block !important;
+}
+
 
 #divlogo{
     float: left;
@@ -64,6 +112,15 @@ header ul li{
     vertical-align: bottom;
     padding: 0%;
     margin: 0%;
+}
+.textogridprincipal
+{
+    font-size: 48px;
+}
+.textogridsecundario{
+    font-size: 1rem;
+    color: #222222;
+    text-align: justify;
 }
 #divmenu{
     width: 100%;
@@ -85,14 +142,45 @@ header ul li{
   .form{
       width: 40%;
       margin: 0 auto;
+      margin-top: 30px;
+      /*border: thick double #fff ;
+      padding: 25px;*/
   }
 
   .form input{
       width: 50%;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px 0px 0px 5px;
   }
 
   .form button{
       width: 15%;
+      padding: 5px 10px;
+      /*background-color: #c09717;*/
+      background: linear-gradient(to right, #c09717 50%, #9c551b 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: all 300ms ease-out;
+      border-radius: 0px 5px 5px 0px ;
+      margin-top: 20px;
+      margin-left: -5px;
+  }
+  .form button:hover{
+      background-position: left bottom;
+      /*color: #fff;*/
+  }
+  button{
+      color: #F27121;
+  }
+  .imggrdsecundario{
+      width: 100%;
+      border-radius: 15px;
+      height: 200px;
   }
 
 
@@ -106,4 +194,26 @@ header ul li{
       /*background: url(./img/background_02.jpg)  no-repeat center center fixed;
       background-size:cover;*/
       background: linear-gradient(90deg, #8A2387, #E94057, #F27121);
+  }
+
+  @media only screen and (max-width:768px){
+      .form{
+          width: 100%;
+      }
+
+  }
+
+  @media only screen and (max-width:480px){
+    .container .name h1{
+        font-size: 30px;
+    }
+    
+    .container .name h5{
+        font-size: 15px;
+    }
+    #about p{
+        max-width: 80% ;
+        text-align: justify;
+    }
+   
   }
