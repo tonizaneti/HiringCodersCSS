@@ -18,6 +18,7 @@ PRÁTICA DE NPM
     Arquitetura
 
     Instalar e Configurar npm Init
+    Parei no minuto 34 da aula 10
 */
 
 //Incluindo uma Biblioteca 
