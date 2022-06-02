@@ -1,0 +1,21 @@
+{
+  "name": "pergunta-resposta-nodejs",
+  "version": "1.0.0",
+  "description": "Pacote Para Testar o Funcionamento do NPM.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "nodejs",
+    "url",
+    "pergunta",
+    "resposta"
+  ],
+  "author": "Toni Zaneti",
+  "license": "ISC",
+  "dependencies": {
+    "query-string": "^7.1.1"
+  }
+}
